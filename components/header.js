@@ -6,7 +6,7 @@ const routes = ['Blog', 'Work', 'Contact'];
 export default function Header() {
   const router = useRouter();
   return (
-    <header className="container mx-auto flex justify-between h-24 items-center">
+    <header className="px-6 md:px-0 container mx-auto flex justify-between h-24 items-center">
       <a href='/'>
         <svg
           aria-label='Daily Dev Tips logo'
