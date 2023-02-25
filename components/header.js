@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const routes = ['Blog', 'Work', 'Contact'];
 
 export default function Header() {
+  const router = useRouter();
   return (
     <header className="container mx-auto flex justify-between h-24 items-center">
       <a href='/'>
@@ -30,7 +32,7 @@ export default function Header() {
         <ul className="flex gap-6 font-medium">
           {routes.map((route)=>{
             return (
-              <li key={route}>
+              <li key={route} className={`hover:underline ${router.pathname ===`/${route.toLowerCase()}` && 'text-red-400'}`}>
                 <Link href={`${route.toLocaleLowerCase()}`}>
                   {route}
                 </Link>
