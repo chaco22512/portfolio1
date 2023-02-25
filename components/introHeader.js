@@ -1,6 +1,6 @@
 export default function IntroHeader() {
   return (
-    <header className="px-6">
+    <header className="px-6 mb-10">
       <div className="max-w-4xl mx-auto flex gap-14">
         <div>
           <h1 className="text-3xl font-bold mb-6">
