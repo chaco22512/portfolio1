@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="container mx-auto flex justify-between flex-col items-center h-6 gap-10">
+    <footer className="container mx-auto flex justify-between flex-col items-center h-6 gap-10 mt-20">
       <nav>
         <ul className="flex gap-6">
           <li>
