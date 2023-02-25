@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function IntroHeader() {
   return (
     <header className="px-6 mb-10 md:px-0">
@@ -13,7 +15,7 @@ export default function IntroHeader() {
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet.
           </p>
-          <a href='#' className="bg-red-400 text-white px-6 py-3 text-lg rounded">Check my work</a>
+          <Link href='/work' className="bg-red-400 text-white px-6 py-3 text-lg rounded">Check my work</Link>
         </div>
         <span className="m-5 inline-block before:w-full before:aspect-square before:-left-1.5 before:top-1.5 before:block before:absolute before:bg-red-400 relative z-0 before:rounded-full">
           <img src='profile.png'
