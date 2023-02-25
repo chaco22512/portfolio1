@@ -1,3 +1,7 @@
+import Link from "next/link";
+
+const routes = ['Blog', 'Work', 'Contact'];
+
 export default function Header() {
   return (
     <header className="container mx-auto flex justify-between h-24 items-center">
@@ -24,16 +28,16 @@ export default function Header() {
       </a>
       <nav>
         <ul className="flex gap-6 font-medium">
-          <li>
-            <a href='#'>Blog</a>
-          </li>
-          <li>
-            <a href='#'>Work</a>
-          </li>
-          <li>
-            <a href='#'>Contact</a>
-          </li>
-        </ul>
+          {routes.map((route)=>{
+            return (
+              <li key={route}>
+                <Link href={`${route.toLocaleLowerCase()}`}>
+                  {route}
+                </Link>
+              </li>
+            )
+          })}
+         </ul>
       </nav>
     </header>
   );
