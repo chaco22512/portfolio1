@@ -18,7 +18,7 @@ export default function Footer() {
           </li>
         </ul>
       </nav>
-      <p className="text-sm text-slate-500 pb-3">&copy; 2022 Chris Bongers. All rights reserved.</p>
+      <p className="text-sm text-slate-500 pb-3">&copy; 2022 Yusuke Kaga. All rights reserved.</p>
     </footer>
   );
 }
